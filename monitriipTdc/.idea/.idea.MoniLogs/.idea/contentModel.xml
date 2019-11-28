@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_MoniLogs.164076930.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Moni.VelocidadeTempoLocalizacao" t="IncludeRecursive">
+        <e p="Infrastructure" t="Include">
+          <e p="CacheGateway.cs" t="Include" />
+          <e p="EmpresaSubscription.cs" t="Include" />
+          <e p="FinisherSubscription.cs" t="Include" />
+          <e p="PlacaSubscription.cs" t="Include" />
+          <e p="ValidationSubscription.cs" t="Include" />
+        </e>
+        <e p="Moni.VelocidadeTempoLocalizacao.csproj" t="IncludeRecursive" />
+        <e p="Services" t="Include">
+          <e p="Finisher.cs" t="Include" />
+          <e p="JobServer.cs" t="Include" />
+          <e p="Validation.cs" t="Include" />
+          <e p="ValidationEmpresa.cs" t="Include" />
+          <e p="ValidationPlaca.cs" t="Include" />
+        </e>
+        <e p="Validations" t="Include">
+          <e p="CNPJ.cs" t="Include" />
+          <e p="DecimalExato.cs" t="Include" />
+          <e p="EnumValido.cs" t="Include" />
+          <e p="IMEI.cs" t="Include" />
+          <e p="InteiroValido.cs" t="Include" />
+          <e p="NumeroObrigatorio.cs" t="Include" />
+          <e p="Obrigatorio.cs" t="Include" />
+          <e p="Placa.cs" t="Include" />
+          <e p="TamanhoMaximo.cs" t="Include" />
+          <e p="TotalDigitos.cs" t="Include" />
+          <e p="ValidationHelper.cs" t="Include" />
+        </e>
+        <e p="VelocidadeTempLocClient.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Moni.VelocidadeTempoLocalizacao.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="MoniLogs.Core" t="IncludeRecursive">
+        <e p="Commands" t="Include" />
+        <e p="Entities" t="Include">
+          <e p="Envelope.cs" t="Include" />
+        </e>
+        <e p="IService.cs" t="Include" />
+        <e p="Infrastructure" t="Include">
+          <e p="ICacheGateway.cs" t="Include" />
+          <e p="IEmpresaSubscription.cs" t="Include" />
+          <e p="IFinisherSubscription.cs" t="Include" />
+          <e p="IPlacaSubscription.cs" t="Include" />
+          <e p="ISubscribeZmq.cs" t="Include" />
+          <e p="IValidationSubscription.cs" t="Include" />
+          <e p="IVelocidadeTempoLocalizacaoClient.cs" t="Include" />
+        </e>
+        <e p="MoniLogs.Core.csproj" t="IncludeRecursive" />
+        <e p="Queries" t="Include" />
+        <e p="ValueObjects" t="Include">
+          <e p="VelocidadeTempoLocalizacao.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="MoniLogs.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="MoniLogs.sln" t="IncludeFlat" />
+      <e p="clients" t="Include">
+        <e p="clientApi" t="IncludeRecursive">
+          <e p="Controllers" t="Include">
+            <e p="LogController.cs" t="Include" />
+            <e p="WeatherForecastController.cs" t="Include" />
+          </e>
+          <e p="Dockerfile" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="WeatherForecast.cs" t="Include" />
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="clientApi.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.0" t="Include">
+                <e p="clientApi.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="consoleClient" t="IncludeRecursive">
+          <e p="Program.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="consoleClient.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.0" t="Include">
+                <e p="consoleClient.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="finisher" t="IncludeRecursive">
+        <e p="Dockerfile" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="finisher.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="finisher.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="server" t="Include">
+        <e p="jobServer" t="IncludeRecursive">
+          <e p="Dockerfile" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="jobServer.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.0" t="Include">
+                <e p="jobServer.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="tests" t="IncludeRecursive">
+        <e p="Class1.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="tests.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="validators" t="Include">
+        <e p="validation" t="IncludeRecursive">
+          <e p="Dockerfile" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.0" t="Include">
+                <e p="validation.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="validation.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="validation.empresa" t="IncludeRecursive">
+          <e p="Dockerfile" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.0" t="Include">
+                <e p="validation.empresa.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="validation.empresa.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="validation.placa" t="IncludeRecursive">
+          <e p="Dockerfile" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.0" t="Include">
+                <e p="validation.placa.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="validation.placa.csproj" t="IncludeRecursive" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

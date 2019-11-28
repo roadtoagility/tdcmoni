@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/Moni.VelocidadeTempoLocalizacao.csproj": {}
+  },
+  "projects": {
+    "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/Moni.VelocidadeTempoLocalizacao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/Moni.VelocidadeTempoLocalizacao.csproj",
+        "projectName": "Moni.VelocidadeTempoLocalizacao",
+        "projectPath": "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/Moni.VelocidadeTempoLocalizacao.csproj",
+        "packagesPath": "/home/douglas/.nuget/packages/",
+        "outputPath": "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/douglas/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj": {
+                "projectPath": "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NetMQ": {
+              "target": "Package",
+              "version": "[4.0.0.207, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "RocksDbNative": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "RocksDbSharp": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.0.601, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj",
+        "projectName": "MoniLogs.Core",
+        "projectPath": "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj",
+        "packagesPath": "/home/douglas/.nuget/packages/",
+        "outputPath": "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/douglas/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NetMQ": {
+              "target": "Package",
+              "version": "[4.0.0.207, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

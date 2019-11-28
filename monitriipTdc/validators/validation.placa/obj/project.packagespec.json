@@ -1,0 +1,61 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/douglas/repos/moni/monitriipTdc/validators/validation.placa/validation.placa.csproj",
+    "projectName": "validation.placa",
+    "projectPath": "/home/douglas/repos/moni/monitriipTdc/validators/validation.placa/validation.placa.csproj",
+    "outputPath": "/home/douglas/repos/moni/monitriipTdc/validators/validation.placa/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {
+          "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/Moni.VelocidadeTempoLocalizacao.csproj": {
+            "projectPath": "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/Moni.VelocidadeTempoLocalizacao.csproj"
+          },
+          "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj": {
+            "projectPath": "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "dependencies": {
+        "NetMQ": {
+          "target": "Package",
+          "version": "[4.0.0.207, )"
+        },
+        "RocksDbNative": {
+          "target": "Package",
+          "version": "[6.2.2, )"
+        },
+        "RocksDbSharp": {
+          "target": "Package",
+          "version": "[6.2.2, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

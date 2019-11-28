@@ -1,0 +1,158 @@
+version: "3.3"
+services:
+  redis:
+    image: 'bitnami/redis:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_MASTER_PORT_NUMBER=6379
+    networks:
+      moni-net:
+        ipv4_address: 172.28.1.6
+    ports:
+      - 6379:6379
+  web:
+    build:
+      context: ./
+      dockerfile: ./clients/clientApi/Dockerfile
+    hostname: app
+    ports:
+      - 5000:80
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    links:
+      - redis
+      - jobserver
+      - validation.placa
+      - validation.empresa
+    environment:
+      - CLIENT_API_PUBLISHER=172.28.1.1
+      - JOB_FINISHER_ROUTER=172.28.1.7
+      - CLIENT_REDIS=172.28.1.6
+    networks:
+      moni-net:
+        ipv4_address: 172.28.1.1
+  jobserver:
+    build:
+      context: ./
+      dockerfile: ./server/jobServer/Dockerfile
+    hostname: jobserver
+    ports:
+      - 10000:10000
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    links:
+      - validation
+    environment:
+      - JOB_SERVER_PUBLISHER=172.28.1.2
+      - JOB_SERVER_SUBSCRIBER=172.28.1.1
+    networks:
+      moni-net:
+        ipv4_address: 172.28.1.2
+  finisher:
+    build:
+      context: ./
+      dockerfile: ./finisher/Dockerfile
+    hostname: finisher
+    ports:
+      - 14000:14000
+      - 15000:15000
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    environment:
+      - JOB_FINISHER_PUBLISHER=172.28.1.7
+      - JOB_FINISHER_ROUTER=172.28.1.7
+      - CLIENT_REDIS=172.28.1.6
+    links:
+      - redis
+    networks:
+      moni-net:
+        ipv4_address: 172.28.1.7
+  validation:
+    build:
+      context: ./
+      dockerfile: ./validators/validation/Dockerfile
+    hostname: validation
+    ports:
+      - 11000:11000
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    links:
+      - validation.placa
+      - validation.empresa
+    environment:
+      - VALIDATOR_SUBSCRIBER=172.28.1.2
+      - VALIDATOR_DEALER=172.28.1.7
+    networks:
+      moni-net:
+        ipv4_address: 172.28.1.3
+  validation.placa:
+    build:
+      context: ./
+      dockerfile: ./validators/validation.placa/Dockerfile
+    hostname: validation.placa
+    ports:
+      - 12000:12000
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    environment:
+      - VALIDATOR_SUBSCRIBER=172.28.1.2
+      - VALIDATOR_DEALER=172.28.1.7
+    links:
+        - redis
+    networks:
+      moni-net:
+        ipv4_address: 172.28.1.4
+  validation.empresa:
+    build:
+      context: ./
+      dockerfile: ./validators/validation.empresa/Dockerfile
+    hostname: validation.empresa
+    ports:
+      - 13000:13000
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    links:
+        - redis
+    environment:
+      - VALIDATOR_SUBSCRIBER=172.28.1.2
+      - VALIDATOR_DEALER=172.28.1.7
+    networks:
+      moni-net:
+        ipv4_address: 172.28.1.5
+
+networks:
+  moni-net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16

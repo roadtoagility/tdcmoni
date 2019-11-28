@@ -1,0 +1,11 @@
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.csprojAssemblyReference.cache
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.AssemblyInfoInputs.cache
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.AssemblyInfo.cs
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/bin/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.deps.json
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/bin/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.dll
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/bin/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.pdb
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/bin/Debug/netstandard2.0/MoniLogs.Core.dll
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/bin/Debug/netstandard2.0/MoniLogs.Core.pdb
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.csproj.CopyComplete
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.dll
+/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/Debug/netstandard2.0/Moni.VelocidadeTempoLocalizacao.pdb

@@ -1,0 +1,16 @@
+/home/douglas/repos/moni2/MoniLogs.Core/bin/Release/netstandard2.0/MoniLogs.Core.deps.json
+/home/douglas/repos/moni2/MoniLogs.Core/bin/Release/netstandard2.0/MoniLogs.Core.dll
+/home/douglas/repos/moni2/MoniLogs.Core/bin/Release/netstandard2.0/MoniLogs.Core.pdb
+/home/douglas/repos/moni2/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.csprojAssemblyReference.cache
+/home/douglas/repos/moni2/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.AssemblyInfoInputs.cache
+/home/douglas/repos/moni2/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.AssemblyInfo.cs
+/home/douglas/repos/moni2/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.dll
+/home/douglas/repos/moni2/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.pdb
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/bin/Release/netstandard2.0/MoniLogs.Core.deps.json
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/bin/Release/netstandard2.0/MoniLogs.Core.dll
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/bin/Release/netstandard2.0/MoniLogs.Core.pdb
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.csprojAssemblyReference.cache
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.AssemblyInfoInputs.cache
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.AssemblyInfo.cs
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.dll
+/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/obj/Release/netstandard2.0/MoniLogs.Core.pdb

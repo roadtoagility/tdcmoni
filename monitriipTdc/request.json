@@ -1,0 +1,14 @@
+{
+	"idLog": 1,
+	"cnpjEmpresaTransporte": "03658904000105",
+	"placaVeiculo": "MVV1523",
+	"velocidadeAtual": 80,
+	"distanciaPercorrida": 100,
+	"situacaoIgnicaoMotor": 1,
+	"situacaoPortaVeiculo": 1,
+	"latitude": -19.513198,
+	"longitude": -47.313823,
+	"pdop": -47.313823,
+	"dataHoraEvento": "20191109",
+	"smalldatetime": "20191109"
+}

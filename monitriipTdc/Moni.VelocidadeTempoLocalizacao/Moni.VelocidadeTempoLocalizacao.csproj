@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetMQ" Version="4.0.0.207" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RocksDbNative" Version="6.2.2" />
+    <PackageReference Include="RocksDbSharp" Version="6.2.2" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MoniLogs.Core\MoniLogs.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="CacheGateway.cs" />
+      <Compile Remove="EmpresaSubscription.cs" />
+      <Compile Remove="FinisherSubscription.cs" />
+      <Compile Remove="PlacaSubscription.cs" />
+      <Compile Remove="ValidationSubscription.cs" />
+    </ItemGroup>
+
+</Project>

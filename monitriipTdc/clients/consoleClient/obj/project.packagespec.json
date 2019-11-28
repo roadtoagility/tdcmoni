@@ -1,0 +1,50 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/douglas/repos/moni/monitriipTdc/clients/consoleClient/consoleClient.csproj",
+    "projectName": "consoleClient",
+    "projectPath": "/home/douglas/repos/moni/monitriipTdc/clients/consoleClient/consoleClient.csproj",
+    "outputPath": "/home/douglas/repos/moni/monitriipTdc/clients/consoleClient/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {
+          "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj": {
+            "projectPath": "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/MoniLogs.Core.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "dependencies": {
+        "NetMQ": {
+          "target": "Package",
+          "version": "[4.0.0.207, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
