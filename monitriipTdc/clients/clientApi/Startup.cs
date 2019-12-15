@@ -13,10 +13,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Moni.VelocidadeTempoLocalizacao;
+using Moni.VelocidadeTempoLocalizacao.Infrastructure.Cache;
 using MoniLogs.Core;
+using MoniLogs.Core.Commands.Infrastructure.Cache;
 using MoniLogs.Core.Infrastructure;
+using MoniLogs.Core.Queries.Infrastructure;
 using NetMQ;
 using NetMQ.Sockets;
+using StackExchange.Redis;
 
 namespace clientApi
 {
@@ -66,11 +70,26 @@ namespace clientApi
             
             System.Diagnostics.Debug.WriteLine("Web server listening to:" + $">tcp://{finishervar}:15000");
             IFinisherSubscription finishersub = new FinisherSubscription(finisher);
+
+            var redisDatabase = CreateRedisInstance();
             
             builder.RegisterInstance(finishersub).SingleInstance();
             builder.RegisterInstance(sender).SingleInstance();
+            builder.RegisterInstance(redisDatabase).SingleInstance();
+            
+            builder.RegisterType<RedisSetCachedValue>().As<ISetCachedValue>();
+            builder.RegisterType<RedisGetCachedValue>().As<IGetCachedValue>();
             builder.RegisterType<VelocidadeTempLocClient>().As<IVelocidadeTempoLocalizacaoClient>();
             builder.RegisterType<CacheGateway>().As<ICacheGateway>();
+        }
+        
+        //TODO: move to a factory method, or anything else.
+        private IDatabase CreateRedisInstance()
+        {
+            var redisIp = Environment.GetEnvironmentVariable("CLIENT_REDIS");
+            var configString = $"{redisIp}:6379,connectRetry=5";
+            var redis = ConnectionMultiplexer.Connect(configString);
+            return redis.GetDatabase();
         }
     }
 }

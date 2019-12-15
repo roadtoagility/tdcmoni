@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using Moni.VelocidadeTempoLocalizacao.Validations;
 using MoniLogs.Core;
 using MoniLogs.Core.Entities;
+using MoniLogs.Core.Services;
 using MoniLogs.Core.ValueObjects;
 using NetMQ;
 using NetMQ.Sockets;
 
 namespace Moni.VelocidadeTempoLocalizacao
 {
-    public class Validation  : IService
+    public class Validation  : IValidationService
     {
         private readonly string DELAER;
         private readonly string VALIDATION_FRONTEND_ENDPOINT;

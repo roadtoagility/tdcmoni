@@ -1,5 +1,7 @@
 ﻿using System;
 using Moni.VelocidadeTempoLocalizacao;
+using Microsoft.Extensions.DependencyInjection;
+using MoniLogs.Core.Services;
 
 namespace finisher
 {
@@ -7,10 +9,11 @@ namespace finisher
     {
         static void Main(string[] args)
         {
-            var publisher = Environment.GetEnvironmentVariable("JOB_FINISHER_PUBLISHER");
-            var router = Environment.GetEnvironmentVariable("JOB_FINISHER_ROUTER");
-            
-            var jobServer = new Finisher(router, publisher);
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton(typeof(IFinisherService), new Finisher(Environment.GetEnvironmentVariable("JOB_FINISHER_ROUTER"), Environment.GetEnvironmentVariable("JOB_FINISHER_PUBLISHER")))
+                .BuildServiceProvider();
+
+            var jobServer = serviceProvider.GetService<IFinisherService>();
             jobServer.Execute();
         }
     }

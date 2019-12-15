@@ -32,6 +32,12 @@
   },
   "frameworks": {
     "netcoreapp3.0": {
+      "dependencies": {
+        "Microsoft.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[3.1.0, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",
@@ -41,7 +47,19 @@
         "net48"
       ],
       "assetTargetFallback": true,
-      "warn": true
+      "warn": true,
+      "downloadDependencies": [
+        {
+          "name": "Microsoft.NETCore.App.Ref",
+          "version": "[3.0.0, 3.0.0]"
+        }
+      ],
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
     }
   }
 }

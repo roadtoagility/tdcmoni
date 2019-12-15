@@ -2,12 +2,13 @@ using System;
 using System.Text;
 using MoniLogs.Core;
 using MoniLogs.Core.Entities;
+using MoniLogs.Core.Services;
 using NetMQ;
 using NetMQ.Sockets;
 
 namespace Moni.VelocidadeTempoLocalizacao
 {
-    public class JobServer  : IService
+    public class JobServer  : IJobServerService
     {
         private readonly string JOB_SERVER_FRONTEND_ENDPOINT;
         private readonly string PUBLISHER;

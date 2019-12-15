@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using MoniLogs.Core;
 using MoniLogs.Core.Entities;
+using MoniLogs.Core.Services;
 using NetMQ;
 using NetMQ.Sockets;
 using RocksDbSharp;
@@ -10,7 +11,7 @@ using StackExchange.Redis;
 
 namespace Moni.VelocidadeTempoLocalizacao 
 {
-    public class ValidationPlaca  : IService
+    public class ValidationPlaca  : IValidationPlacaService
     {
         
         private IDatabase _db;

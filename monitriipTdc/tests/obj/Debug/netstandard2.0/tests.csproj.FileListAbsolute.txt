@@ -1,11 +1,3 @@
-/home/douglas/repos/moni2/tests/bin/Debug/netstandard2.0/tests.deps.json
-/home/douglas/repos/moni2/tests/bin/Debug/netstandard2.0/tests.dll
-/home/douglas/repos/moni2/tests/bin/Debug/netstandard2.0/tests.pdb
-/home/douglas/repos/moni2/tests/obj/Debug/netstandard2.0/tests.csprojAssemblyReference.cache
-/home/douglas/repos/moni2/tests/obj/Debug/netstandard2.0/tests.AssemblyInfoInputs.cache
-/home/douglas/repos/moni2/tests/obj/Debug/netstandard2.0/tests.AssemblyInfo.cs
-/home/douglas/repos/moni2/tests/obj/Debug/netstandard2.0/tests.dll
-/home/douglas/repos/moni2/tests/obj/Debug/netstandard2.0/tests.pdb
 /home/douglas/repos/moni/monitriipTdc/tests/bin/Debug/netstandard2.0/tests.deps.json
 /home/douglas/repos/moni/monitriipTdc/tests/bin/Debug/netstandard2.0/tests.dll
 /home/douglas/repos/moni/monitriipTdc/tests/bin/Debug/netstandard2.0/tests.pdb

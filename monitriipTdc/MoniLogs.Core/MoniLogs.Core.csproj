@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands" />
-    <Folder Include="Queries" />
+    <Folder Include="Commands\VelocidadeTempoLocalizacao" />
+    <Folder Include="Queries\Parameters" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,15 @@
 using System;
 using System.Collections.Generic;
+using Moni.VelocidadeTempoLocalizacao.Infrastructure.Cache;
 using MoniLogs.Core;
+using MoniLogs.Core.Commands.Infrastructure.Cache;
+using MoniLogs.Core.Commands.Infrastructure.Parameters;
 using MoniLogs.Core.Entities;
 using MoniLogs.Core.Infrastructure;
+using MoniLogs.Core.Services;
 using NetMQ;
 using NetMQ.Sockets;
+using StackExchange.Redis;
 
 namespace Moni.VelocidadeTempoLocalizacao
 {
@@ -20,10 +25,10 @@ namespace Moni.VelocidadeTempoLocalizacao
         public Envelope Message { get; set; }
     }
     
-    public class Finisher : IService
+    public class Finisher : IFinisherService
     {
-        private Dictionary<string, ValidatedMessage> _validatedMessages;
-        private ICacheGateway _cache;
+        private readonly Dictionary<string, ValidatedMessage> _validatedMessages;
+        private readonly ISetCachedValue _setCachedValueCommand;
         private readonly string  PUBLISHER;
         private readonly string ROUTER;
         
@@ -33,7 +38,15 @@ namespace Moni.VelocidadeTempoLocalizacao
             PUBLISHER = $"tcp://{ipPublisher}:15000";
             ROUTER = $"tcp://{ipRouter}:14000";
             _validatedMessages = new Dictionary<string, ValidatedMessage>();
-            _cache = new CacheGateway();
+            _setCachedValueCommand = new RedisSetCachedValue(CreateRedisInstance());
+        }
+
+        private IDatabase CreateRedisInstance()
+        {
+            var redisIp = Environment.GetEnvironmentVariable("CLIENT_REDIS");
+            var configString = $"{redisIp}:6379,connectRetry=5";
+            var redis = ConnectionMultiplexer.Connect(configString);
+            return redis.GetDatabase();
         }
         
         public void Execute()
@@ -69,7 +82,7 @@ namespace Moni.VelocidadeTempoLocalizacao
                                 reporterFinisher.SendMoreFrame(envelope.Identity).SendFrame(json);
                                 Console.WriteLine("Finisher sending " + envelope.Identity);
 
-                                _cache.SetValue(envelope.Identity, json);
+                                _setCachedValueCommand.Execute(new SetCacheParameter(envelope.Identity, json));
                                 
                                 _validatedMessages.Remove(envelope.Identity);
                             }

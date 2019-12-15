@@ -2,13 +2,14 @@ using System;
 using System.Collections.Generic;
 using MoniLogs.Core;
 using MoniLogs.Core.Entities;
+using MoniLogs.Core.Services;
 using NetMQ;
 using NetMQ.Sockets;
 using StackExchange.Redis;
 
 namespace Moni.VelocidadeTempoLocalizacao
 {
-    public class ValidationEmpresa  : IService
+    public class ValidationEmpresa  : IValidationEmpresaService
     {
         private IDatabase _db;
         private readonly string DELAER;

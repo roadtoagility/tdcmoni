@@ -14,7 +14,7 @@
         "outputPath": "/home/douglas/repos/moni/monitriipTdc/Moni.VelocidadeTempoLocalizacao/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/douglas/.config/NuGet/NuGet.Config"
+          "/home/douglas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -76,7 +76,8 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -90,7 +91,7 @@
         "outputPath": "/home/douglas/repos/moni/monitriipTdc/MoniLogs.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/douglas/.config/NuGet/NuGet.Config"
+          "/home/douglas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -136,7 +137,8 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -150,7 +152,7 @@
         "outputPath": "/home/douglas/repos/moni/monitriipTdc/clients/clientApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/douglas/.config/NuGet/NuGet.Config"
+          "/home/douglas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -217,7 +219,22 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }
